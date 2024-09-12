@@ -12,13 +12,11 @@ const Profile = () => {
       <p>So, how are you?</p>
       <hr />
       <h2>The profile visited is here:</h2>
-      {name === "popeye" ? (
-        <Popeye />
-      ) : name === "spinach" ? (
-        <Spinach />
+      if (name === "popeye") {<Popeye />}
+      name === "spinach" ? (
+      <Spinach />
       ) : (
-        <DefaultProfile />
-      )}
+      <DefaultProfile />)
     </div>
   );
 };
